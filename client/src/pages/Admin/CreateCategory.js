@@ -79,6 +79,7 @@ const CreateCategory = () => {
       if (data?.success) {
         toast.success(`${deleteName}category deleted successfully`);
         setDeletedName("");
+        setName("");
         getAllCategory();
       } else {
         toast.error(data.message);
